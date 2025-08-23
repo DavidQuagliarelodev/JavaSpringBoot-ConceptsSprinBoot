@@ -12,7 +12,7 @@ public class HomeController {
     //Porem ela so vai passar a persistir quando eu instanciar o HomeController
     //Como o spring ja faz isso automaticamente quando iniciliza o projeto atravez do SpringBootApplication
     //E o spring ja faz a injeção de dependencia automaticamente
-    //Eu consigo usar o HomeService aqui sem precisar instanciar ele manualmente
+    //Eu consigo usar o HomeService aqui sem precisar instanciar ele manualmente pasando o objeto como parametro no construtor do HomeController
     //Isso é chamado de Injeção de Dependencia
     private HomeService homeService;
 
