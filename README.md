@@ -1,7 +1,7 @@
 # 🚀 ConceptsSpringBoot Project
 
 ## 📌 Purpose
-This project was developed as a study to demonstrate the use of **Spring Boot** for creating a simple and functional **REST API**.
+This project was developed as a study to demonstrate the use of **Spring Boot** and **Swagger** for creating a simple and functional **REST API**.
 
 ---
 
@@ -9,6 +9,7 @@ This project was developed as a study to demonstrate the use of **Spring Boot** 
 - ☕ **Java**
 - 🌱 **Spring Boot**
 - 📦 **Maven**
+- 📄 **Swagger**
 
 ---
 
@@ -16,6 +17,7 @@ This project was developed as a study to demonstrate the use of **Spring Boot** 
 - **Spring Web**
 - **Spring DevTools**
 - **Lombok**
+- **OpenApi**
 
 ---
 
@@ -39,31 +41,28 @@ This project was developed as a study to demonstrate the use of **Spring Boot** 
 
 ## 🌐 Available Endpoints
 
-### 🔹 GET `/home`
-Returns Home information.
+### 🔹 GET `/user`
+Returns all user data.
 
-### 🔹 GET `/blog`
-Returns blog article information.
+### 🔹 GET `/user/{id}`
+Returns one user for id data.
 
-### 🔹 POST `/blog/postarticle`
-Creates a new article associated with a user.
+### 🔹 POST `/user`
+Creates a new user in fake db/repository in memory.
 
 ---
 
 ## 📝 Example of POST Request
 
 **URL:**  
-`http://localhost:3000/blog/postarticle`
+`http://localhost:3000/user`
 
 **Body (JSON):**
 ```json
 {
+  "id" : 1,
   "name": "David",
-  "email": "david@gmail.com",
-  "article": {
-    "title": "Dev",
-    "content": "development in java"
-  }
+  "email": "david@gmail.com"
 }
 ```
 
